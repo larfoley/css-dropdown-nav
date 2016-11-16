@@ -1,0 +1,117 @@
+/*DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+        Version 2, December 2004
+
+Copyright (C) 2016 Laurence Foley
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+0. You just DO WHAT THE FUCK YOU WANT TO.*/
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: gray;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: black;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  margin: auto;
+  /*overflow: auto;*/
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.nav {
+  background-color: #16A085;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  transition: .3s;
+  clear: both;
+}
+
+.nav__item {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav__link {
+  display: block;
+  padding: 1em 0;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav__link:hover {
+  font-weight: bold;
+}
+
+.nav__link, .logo {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
+}
+.nav__menu {
+  float: right;
+}
+
+.logo, .nav__menu {
+  margin: 1em 0;
+}
+
+.nav__toggle {
+  clear: both;
+}
+
+.nav__list {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.nav__toggle:checked ~ .nav__list {
+  max-height: 245px;
+}
+
+.hamburger {
+  display: inline-block;
+}
+
+.hamburger__line {
+  background: white;
+  display: block;
+  width: 33px;
+  height: 4px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.hamburger__line:last-child {
+  margin-bottom: 0;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
